@@ -1,0 +1,5 @@
+You need CrissCross before you can build IdleCrawler.
+Clone the CrissCross repo at http://github.com/tycho/crisscross.
+Follow the instructions given and after you have run 'make install',
+you're good to go. Make sure you add the CrissCross and pthread libraries
+to your linker settings.
