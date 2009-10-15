@@ -37,7 +37,7 @@ int Crawler::Connect(const char* host, unsigned short port)
 int Crawler::Fetch(const char* path)
 {
 	char *buffer = new char[255];
-	cc_err = sprintf(buffer, "GET %s HTTP/1.1\r\nHost: %s\r\nUser-Agent: IdleBot/alpha\r\n\r\n",path,m_host);
+	cc_err = sprintf(buffer, "GET %s HTTP/1.1\r\nHost: %s\r\nUser-Agent: IdleCrawler/alpha\r\n\r\n",path,m_host);
 	cc_err = m_sock->Send(buffer,255);
 	delete buffer;
 	if (cc_err < 1)
